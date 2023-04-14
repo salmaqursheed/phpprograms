@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli('localhost', 'root', '');
+    $conn = new mysqli('localhost', 'root', '','klcdoe');
     mysqli_select_db($conn, 'klcdoe');
     if (isset($_GET["email"]) && $_GET["email"] != '' &&isset($_GET['password']) && $_GET['password'] != '')
     {
@@ -8,7 +8,7 @@
         echo  $email;
         echo  $password;
   
-        $getData = "SELECT * FROM Student_information WHERE email='" .$email."'
+        $getData = "SELECT * FROM Student_Data WHERE email='" .$email."'
         and password='".$password."'";
   
         $result = mysqli_query($conn,$getData);
