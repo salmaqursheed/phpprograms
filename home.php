@@ -2,7 +2,7 @@
 // Database connection details
 
 
-//Hello World
+//Hello World by salma
 $servername = "localhost";
 $username = "your_username";
 $password = "your_password";
